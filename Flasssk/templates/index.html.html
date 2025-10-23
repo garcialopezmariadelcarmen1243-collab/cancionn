@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No One Noticed - The Marías</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #ff6b6b;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .player-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .album-art {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, #ff6b6b, #ffa8a8);
+            border-radius: 15px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .audio-player {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        audio {
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+        }
+
+        .lyrics {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 20px;
+        }
+
+        .lyrics h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+
+        .lyrics p {
+            line-height: 1.6;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        .info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>No One Noticed</h1>
+            <p class="subtitle">The Marías</p>
+        </header>
+
+        <div class="player-section">
+            <div class="album-art">
+                <img src="The_Marías_-_No_One_Noticed_(Extended).jpg" height="200">
+            </div>
+            
+            <!-- REPRODUCTOR DE AUDIO CON FLASK -->
+            <div class="audio-player">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                </audio>
+            </div>
+        </div>
+
+        <div class="info">
+            <p><strong>Duración:</strong> 3:28</p>
+        </div>
+
+        <div class="lyrics">
+            <h3>Letra</h3>
+            <p>I was walking down the street</p>
+            <p>When I saw you looking at me</p>
+            <p>I was thinking 'bout the way</p>
+            <p>That you make me feel so complete</p>
+            <br>
+            <p>But no one noticed</p>
+            <p>No one noticed</p>
+            <p>No one noticed</p>
+            <p>No one noticed</p>
+            <br>
+            <p>I was dancing in the dark</p>
+            <p>With the rhythm of my heart</p>
+            <p>I was thinking 'bout the way</p>
+            <p>That we'd never be apart</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 The Marías Fan Site - Sitio de demostración</p>
+        </footer>
+    </div>
+</body>
+</html>
